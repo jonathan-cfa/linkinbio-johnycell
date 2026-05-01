@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+    /* conf. da pág. */
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+body {
+    /* conf. do fundo */
+    background: url('../img/fundo-dark-r.jpg') no-repeat top center;
+}
+
+main {
+    /* Configuração do main */
+    position: relative;
+    height: 100vh;
+}
+
+section#telefone {
+    /* Imagem do iphone */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 627px;
+    width: 311px;
+    background-color: blue;
+    background: url('../img/frame-iphone.png') no-repeat;
+
+
+}
+
+iframe#tela {
+    /*Ajueste do iFrame*/
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 268px;
+    height: 471px;
+}
+
+section#redes {
+    text-align: right;
+    display: list-item;
+    position: fixed;
+    left: 85%;
+
+}
+
+section#redes img {
+    /* Ajueste dos "Botões" */
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+    box-sizing: border-box;
+}
+
+section#redes img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.61);
+    transform: translate(-3px,-3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    transition: transform 0.3s, border 1s;
+}
